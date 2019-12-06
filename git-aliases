@@ -5,9 +5,16 @@
 # To source run:-
 # > . ./git-aliases
 
+# aliases
 alias gbase='tree .git/'            # display contents of .git/ directory
 alias gobjs='tree .git/objects'     # explore git objects
 alias grefs='tree .git/refs'        # explore git labels
 alias headg='cat .git/HEAD'         # where is your head at?
 alias catg='git cat-file -p'        # cat git object
+alias golog='git log --oneline'
+alias gflog='git log --format=fuller'
+alias grlog='git log --format=raw'
 
+# functions
+# calculate the sha-1 hash of object
+ghash(){ echo "$1" | git hash-object --stdin }
