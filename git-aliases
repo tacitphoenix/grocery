@@ -1,0 +1,13 @@
+# Helper utilities that will allow us to investigate git
+# Dependencies: tree
+#
+# This is an alias file that will need to be sourced
+# To source run:-
+# > . ./git-aliases
+
+alias gbase='tree .git/'            # display contents of .git/ directory
+alias gobjs='tree .git/objects'     # explore git objects
+alias grefs='tree .git/refs'        # explore git labels
+alias headg='cat .git/HEAD'         # where is your head at?
+alias catg='git cat-file -p'        # cat git object
+
