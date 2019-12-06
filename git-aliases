@@ -1,5 +1,5 @@
 # Helper utilities that will allow us to investigate git
-# Dependencies: tree
+# Dependencies: tree git
 #
 # This is an alias file that will need to be sourced
 # To source run:-
@@ -14,6 +14,7 @@ alias catg='git cat-file -p'        # cat git object
 alias golog='git log --oneline'
 alias gflog='git log --format=fuller'
 alias grlog='git log --format=raw'
+alias glogd='git log --oneline --graph --decorate'
 
 # functions
 # calculate the sha-1 hash of object
